@@ -1,0 +1,44 @@
+                   Factorial of a number:
+class HelloWorld {
+    public static void main(String[] args) {
+        int number = 35;
+        long factorial = 1;
+        
+    for(int i=1; i<=number; i++){
+        factorial *=i;
+    }
+    System.out.println(number+ factorial);
+    }
+}
+
+
+
+
+                    :::STANDARD CODE:::
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    
+     int factorial;
+     
+     HelloWorld()
+     {
+         factorial=1;
+     }
+    public int getFact(int number)
+    {
+    for(int i=1; i<=number; i++){
+        factorial *=i;
+    }
+    return factorial;
+    }
+    public static void main(String[] args) {
+        int number = 5;
+       HelloWorld obj1=new HelloWorld();
+       int f=obj1.factorial(number);
+    System.out.println(f);
+    }
+}
